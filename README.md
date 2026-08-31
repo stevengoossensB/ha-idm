@@ -80,7 +80,7 @@ carries, so you will not see empty entities for services you do not use.
 ### HACS (recommended)
 
 1. HACS → ⋮ → **Custom repositories**
-2. Add `https://github.com/your/repo` as an **Integration**
+2. Add `https://github.com/stevengoossensB/ha-idm` as an **Integration**
 3. Install **IDM**, then restart Home Assistant
 
 ### Manual
