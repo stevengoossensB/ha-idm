@@ -1,7 +1,22 @@
 # IDM for Home Assistant
 
-[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Maintainer](https://img.shields.io/badge/maintainer-Geert%20Meersman-green?style=for-the-badge&logo=github)](https://github.com/geertmeersman)
+[![Buy me an Omer](https://img.shields.io/badge/Buy%20me%20an%20Omer-donate-yellow?style=for-the-badge&logo=buymeacoffee)](https://www.buymeacoffee.com/geertmeersman)
+[![Discord](https://img.shields.io/discord/1094198226493636638?style=for-the-badge&logo=discord)](https://discord.gg/BTW6S9m3)
+
+[![MIT License](https://img.shields.io/github/license/geertmeersman/miwa?style=flat-square)](https://github.com/geertmeersman/miwa/blob/master/LICENSE)
+[![HACS Default](https://img.shields.io/badge/HACS-Default-41BDF5.svg?style=flat-square)](https://github.com/hacs/integration)
+[![Open in HACS](https://my.home-assistant.io/badges/hacs_repository.svg?style=flat-square)](https://my.home-assistant.io/redirect/hacs_repository/?owner=geertmeersman&repository=miwa&category=integration)
+
+[![GitHub Issues](https://img.shields.io/github/issues/geertmeersman/miwa)](https://github.com/geertmeersman/miwa/issues)
+[![Resolve Time](http://isitmaintained.com/badge/resolution/geertmeersman/miwa.svg)](http://isitmaintained.com/project/geertmeersman/miwa)
+[![Open Issues](http://isitmaintained.com/badge/open/geertmeersman/miwa.svg)](http://isitmaintained.com/project/geertmeersman/miwa)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](https://github.com/geertmeersman/miwa/pulls)
+
+[![Validation Status](https://github.com/geertmeersman/miwa/actions/workflows/validate.yml/badge.svg)](https://github.com/geertmeersman/miwa/actions/workflows/validate.yml)
+[![Python](https://img.shields.io/badge/Python-FFD43B?logo=python)](https://github.com/geertmeersman/miwa/search?l=python)
+[![Latest Release](https://img.shields.io/github/v/release/geertmeersman/miwa?logo=github)](https://github.com/geertmeersman/miwa/releases)
+[![Last Commit](https://img.shields.io/github/last-commit/geertmeersman/miwa)](https://github.com/geertmeersman/miwa/commits)
 
 Home Assistant integration for **[Mijn IDM](https://www.mijnidm.be)**, the customer portal of
 [IDM](https://www.idm.be) — the Belgian intermunicipal waste company serving Lokeren and
