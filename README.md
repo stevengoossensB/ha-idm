@@ -8,8 +8,6 @@
 [![Open in HACS](https://my.home-assistant.io/badges/hacs_repository.svg?style=flat-square)](https://my.home-assistant.io/redirect/hacs_repository/?owner=stevengoossensB&repository=ha-idm&category=integration)
 
 [![GitHub Issues](https://img.shields.io/github/issues/stevengoossensB/ha-idm)](https://github.com/stevengoossensB/ha-idm/issues)
-[![Resolve Time](http://isitmaintained.com/badge/resolution/stevengoossensB/ha-idm.svg)](http://isitmaintained.com/project/stevengoossensB/ha-idm)
-[![Open Issues](http://isitmaintained.com/badge/open/stevengoossensB/ha-idm.svg)](http://isitmaintained.com/project/stevengoossensB/ha-idm)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](https://github.com/stevengoossensB/ha-idm/pulls)
 
 [![Validation Status](https://github.com/stevengoossensB/ha-idm/actions/workflows/validate.yml/badge.svg)](https://github.com/stevengoossensB/ha-idm/actions/workflows/validate.yml)
