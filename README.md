@@ -2,7 +2,6 @@
 
 [![Maintainer](https://img.shields.io/badge/maintainer-stevengoossensB-green?style=for-the-badge&logo=github)](https://github.com/stevengoossensB)
 [☕](https://www.buymeacoffee.com/stevengoossens)
-[![Discord](https://img.shields.io/discord/1094198226493636638?style=for-the-badge&logo=discord)](https://discord.gg/BTW6S9m3)
 
 [![MIT License](https://img.shields.io/github/license/stevengoossensB/ha-idm?style=flat-square)](https://github.com/stevengoossensB/ha-idm/blob/main/LICENSE)
 [![HACS Default](https://img.shields.io/badge/HACS-Default-41BDF5.svg?style=flat-square)](https://github.com/hacs/integration)
