@@ -3,7 +3,7 @@
     "step": {
       "user": {
         "title": "IDM",
-        "description": "Meld je aan met je Mijn IDM-account (https://www.mijnidm.be).",
+        "description": "Meld je aan met je Mijn IDM-account.",
         "data": {
           "username": "E-mailadres",
           "password": "Wachtwoord"
