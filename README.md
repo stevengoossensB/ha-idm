@@ -2,10 +2,6 @@
 
 [![Maintainer](https://img.shields.io/badge/maintainer-stevengoossensB-green?style=for-the-badge&logo=github)](https://github.com/stevengoossensB)
 
-[![Buy Me a Coffee](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&slug=stevengoossens&button_colour=FFDD00&font_colour=000000&font_family=Arial&outline_colour=000000&coffee_colour=ffffff)](https://coff.ee/stevengoossens)
-
-[![Open in HACS](https://my.home-assistant.io/badges/hacs_repository.svg?style=flat-square)](https://my.home-assistant.io/redirect/hacs_repository/?owner=stevengoossensB&repository=ha-idm&category=integration)
-
 [![MIT License](https://img.shields.io/github/license/stevengoossensB/ha-idm?style=flat-square)](https://github.com/stevengoossensB/ha-idm/blob/main/LICENSE)
 [![HACS Default](https://img.shields.io/badge/HACS-Default-41BDF5.svg?style=flat-square)](https://github.com/hacs/integration)
 
@@ -16,6 +12,10 @@
 [![Python](https://img.shields.io/badge/Python-FFD43B?logo=python)](https://github.com/stevengoossensB/ha-idm/search?l=python)
 [![Latest Release](https://img.shields.io/github/v/release/stevengoossensB/ha-idm?logo=github)](https://github.com/stevengoossensB/ha-idm/releases)
 [![Last Commit](https://img.shields.io/github/last-commit/stevengoossensB/ha-idm)](https://github.com/stevengoossensB/ha-idm/commits)
+
+[![Buy Me a Coffee](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&slug=stevengoossens&button_colour=FFDD00&font_colour=000000&font_family=Arial&outline_colour=000000&coffee_colour=ffffff)](https://coff.ee/stevengoossens)
+
+[![Open in HACS](https://my.home-assistant.io/badges/hacs_repository.svg?style=flat-square)](https://my.home-assistant.io/redirect/hacs_repository/?owner=stevengoossensB&repository=ha-idm&category=integration)
 
 Home Assistant integration for **[Mijn IDM](https://www.mijnidm.be)**, the customer portal of
 [IDM](https://www.idm.be) — the Belgian intermunicipal waste company serving Lokeren and
