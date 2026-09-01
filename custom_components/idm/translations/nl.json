@@ -1,0 +1,30 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "IDM",
+        "description": "Meld je aan met je Mijn IDM-account.",
+        "data": {
+          "username": "E-mailadres",
+          "password": "Wachtwoord"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Opnieuw aanmelden bij IDM",
+        "description": "Het wachtwoord voor {username} wordt niet langer aanvaard. Geef het huidige wachtwoord in.",
+        "data": {
+          "password": "Wachtwoord"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Kan geen verbinding maken met het Mijn IDM-portaal",
+      "invalid_auth": "Ongeldig e-mailadres of wachtwoord",
+      "unknown": "Onverwachte fout"
+    },
+    "abort": {
+      "already_configured": "Dit account is al geconfigureerd",
+      "reauth_successful": "Opnieuw aanmelden is gelukt"
+    }
+  }
+}

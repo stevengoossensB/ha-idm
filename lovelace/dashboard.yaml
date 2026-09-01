@@ -1,0 +1,36 @@
+views:
+  - title: IDM
+    path: idm
+    badges: []
+    cards:
+      - type: entities
+        title: IDM Overview
+        show_header_toggle: false
+        entities:
+          # Replace these with your actual `sensor.idm_<key>` entities
+          - sensor.idm_euro_totaal
+          - sensor.idm_gewicht_totaal
+          - sensor.idm_percentage
+          - sensor.idm_timestamp
+
+      - type: glance
+        title: Quick Stats
+        entities:
+          - sensor.idm_euro
+          - sensor.idm_gewicht
+          - sensor.idm_aantal
+
+      - type: markdown
+        content: |
+          ## IDM Integration
+
+          This view contains example cards for the IDM integration. Replace the
+          `sensor.idm_<key>` entity IDs above with the entities created by the
+          integration (look for `sensor.idm_...` in Developer Tools → States).
+
+      - type: history-graph
+        title: History
+        entities:
+          - sensor.idm_euro_totaal
+          - sensor.idm_gewicht_totaal
+        hours_to_show: 168
