@@ -1,0 +1,88 @@
+name: Bump Version
+
+on:
+  workflow_dispatch:
+    inputs:
+      bump_type:
+        description: 'Version bump type'
+        required: true
+        default: 'patch'
+        type: choice
+        options:
+          - major
+          - minor
+          - patch
+
+jobs:
+  bump-version:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Bump version and create release
+        shell: python
+        run: |
+          import json
+          import os
+          import subprocess
+          from pathlib import Path
+          
+          # Read current version from manifest
+          manifest_path = Path("custom_components/idm/manifest.json")
+          manifest = json.loads(manifest_path.read_text())
+          current_version = manifest["version"]
+          
+          # Parse version (expects MAJOR.MINOR.PATCH)
+          major, minor, micro = (int(p) for p in current_version.split("."))
+          
+          # Bump version based on input
+          bump_type = "${{ github.event.inputs.bump_type }}"
+          if bump_type == "major":
+              major += 1
+              minor = 0
+              micro = 0
+          elif bump_type == "minor":
+              minor += 1
+              micro = 0
+          else:  # patch
+              micro += 1
+          
+          new_version = f"{major}.{minor}.{micro}"
+          
+          # Update manifest
+          manifest["version"] = new_version
+          manifest_path.write_text(json.dumps(manifest, indent=2) + "\n")
+          
+          # Update VERSION file
+          version_file = Path("VERSION")
+          version_file.write_text(f"v{new_version}\n")
+          
+          # Configure git
+          subprocess.run(["git", "config", "user.name", "github-actions[bot]"], check=True)
+          subprocess.run(["git", "config", "user.email", "github-actions[bot]@users.noreply.github.com"], check=True)
+          
+          # Commit and create tag
+          subprocess.run(["git", "add", "custom_components/idm/manifest.json", "VERSION"], check=True)
+          subprocess.run(["git", "commit", "-m", f"chore: bump version to {new_version}"], check=True)
+          subprocess.run(["git", "tag", f"v{new_version}"], check=True)
+          subprocess.run(["git", "push", "origin", "HEAD:main", f"v{new_version}"], check=True)
+          
+          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as env_file:
+              env_file.write(f"NEW_VERSION=v{new_version}\n")
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ env.NEW_VERSION }}
+          generate_release_notes: true
