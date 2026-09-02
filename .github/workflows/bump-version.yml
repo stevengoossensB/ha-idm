@@ -34,16 +34,14 @@ jobs:
           import json
           import subprocess
           from pathlib import Path
-          from packaging import version
           
           # Read current version from manifest
           manifest_path = Path("custom_components/idm/manifest.json")
           manifest = json.loads(manifest_path.read_text())
           current_version = manifest["version"]
           
-          # Parse version
-          v = version.parse(current_version)
-          major, minor, micro = v.major, v.minor, v.micro
+          # Parse version (expects MAJOR.MINOR.PATCH)
+          major, minor, micro = (int(p) for p in current_version.split("."))
           
           # Bump version based on input
           bump_type = "${{ github.event.inputs.bump_type }}"
