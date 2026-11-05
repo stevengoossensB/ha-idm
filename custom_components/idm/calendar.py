@@ -10,7 +10,11 @@ from __future__ import annotations
 from datetime import date, datetime, timedelta
 import logging
 
-from homeassistant.components.calendar import CalendarEntity, CalendarEntityDescription, CalendarEvent
+from homeassistant.components.calendar import (
+    CalendarEntity,
+    CalendarEntityDescription,
+    CalendarEvent,
+)
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.entity import EntityDescription
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
