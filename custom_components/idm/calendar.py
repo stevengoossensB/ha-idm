@@ -10,7 +10,11 @@ from __future__ import annotations
 from datetime import date, datetime, timedelta
 import logging
 
-from homeassistant.components.calendar import CalendarEntity, CalendarEvent
+from homeassistant.components.calendar import (
+    CalendarEntity,
+    CalendarEntityDescription,
+    CalendarEvent,
+)
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.entity import EntityDescription
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
@@ -22,7 +26,7 @@ from .models import IDMItem
 
 _LOGGER = logging.getLogger(__name__)
 
-CALENDAR_DESCRIPTION = EntityDescription(key="calendar", icon="mdi:calendar-refresh")
+CALENDAR_DESCRIPTION = CalendarEntityDescription(key="calendar", icon="mdi:calendar-refresh")
 
 
 async def async_setup_entry(
