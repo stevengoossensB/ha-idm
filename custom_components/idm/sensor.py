@@ -47,7 +47,7 @@ SENSOR_DESCRIPTIONS: list[IDMSensorDescription] = [
         icon="mdi:cash-multiple",
         device_class=SensorDeviceClass.MONETARY,
         native_unit_of_measurement=CURRENCY_EURO,
-        state_class=SensorStateClass.TOTAL_INCREASING,
+        state_class=SensorStateClass.TOTAL,
     ),
     IDMSensorDescription(
         key="gewicht",
